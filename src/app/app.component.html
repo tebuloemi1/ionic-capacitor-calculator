@@ -1,3 +1,30 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu"  content-id="main">
+  <ion-header>
+   <ion-toolbar>
+ <ion-title>menu</ion-title>
+   </ion-toolbar>
+  </ion-header>
+<ion-content>
+<ion-list>
+  <ion-menu-toggle>
+<ion-item  routerLink= "/conversional">
+<ion-icon name="stats-chart-sharp"  slot ="start"></ion-icon>
+<ion-label>Conversional Calculator</ion-label>
+
+</ion-item>
+</ion-menu-toggle>
+<ion-menu-toggle>
+<ion-item routerLink= "/health">
+
+  <ion-icon name="MedKit-outline"  slot ="start"></ion-icon>
+  <ion-label>Health Calculator</ion-label>
+
+</ion-item>
+</ion-menu-toggle>
+</ion-list>
+
+</ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
